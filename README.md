@@ -8,8 +8,7 @@ void setup()
   pinMode(pin,INPUT);
   Serial.begin(9600);
 }
-void loop()
-{
+void loop(){
   data=analogRead(pin);
 readval=(5./1023.)*data;
   Serial.println(readval);
